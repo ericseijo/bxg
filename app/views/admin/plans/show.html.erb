@@ -1,0 +1,42 @@
+<h1><%= @subscription.level %> Details</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Level:</b>
+  <%= @subscription.level %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @subscription.price %>
+</p>
+
+<p>
+  <b>Number of releases per month:</b>
+  <%= @subscription.number_of_releases_per_month %>
+</p>
+
+<p>
+  <b>Storage space:</b>
+  <%= @subscription.storage_space %>
+</p>
+
+<p>
+  <b>Number of user accounts:</b>
+  <%= @subscription.number_of_user_accounts %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @subscription.description %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @subscription.active %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_plan_path(@subscription) %> |
+<%= link_to 'Back', admin_plans_path %>

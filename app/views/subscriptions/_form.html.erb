@@ -1,0 +1,76 @@
+<%= form_for(@subscription) do |f| %>
+  <% if @subscription.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subscription.errors.count, "error") %> prohibited this subscription from being saved:</h2>
+
+      <ul>
+      <% @subscription.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.hidden_field :stripe_card_token %>
+  <%= f.hidden_field :plan_id, :value => @plan.id %>
+  <%= f.hidden_field :user_name, :value => current_user.full_name %>
+
+  <div class="field">
+    <h3><%= @plan.level %> Membership</h3>
+    <p><%= @plan.price %></p>
+    <p><%= @plan.description %></p>
+  </div>
+
+  <h4>Enter Payment Information</h4>
+
+  <% if @subscription.stripe_card_token.present? %>
+    Credit card has been provided.
+  <% else %>
+    <div class="field">
+      <%= label_tag :address, "Address" %>
+      <%= text_field_tag 'user[address]', nil, address: nil %>
+    </div>
+    <div class="field">
+      <%= label_tag :address_2, "Address" %>
+      <%= text_field_tag 'user[address_2]', nil, address_2: nil %>
+    </div>
+    <div class="field">
+      <%= label_tag :city %>
+      <%= text_field_tag 'user[city]', nil, city: nil %>
+    </div>
+    <div class="field">
+      <%= label_tag :state %>
+      <%= text_field_tag 'user[state]', nil, state: nil %>
+    </div>
+    <div class="field">
+      <%= label_tag :zip %>
+      <%= text_field_tag 'user[zip]', nil, zip: nil %>
+    </div>
+    <div class="field">
+      <%= label_tag :country %>
+      <%= country_select("user", "country", [ "United States", "United Kingdom", "France", "Germany" ]) %>
+    </div>
+    <div class="field">
+      <%= label_tag :card_number, "Credit Card Number" %>
+      <%= text_field_tag :card_number, nil, name: nil %>
+    </div>
+    <div class="field">
+      <%= label_tag :card_code, "Security Code on Card (CVV)" %>
+      <%= text_field_tag :card_code, nil, name: nil %>
+    </div>
+    <div class="field">
+      <%= label_tag :card_month, "Card Expiration" %>
+      <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
+      <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"} %>
+    </div>
+  <% end %>
+  <div id="stripe_error">
+    <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.</noscript>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Subscribe" %>
+  </div>
+<% end %>
+
+

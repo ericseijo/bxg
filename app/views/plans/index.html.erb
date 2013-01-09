@@ -1,0 +1,14 @@
+<h1>Signup - Choose a Plan</h1>
+
+<%= form_tag new_subscription_path, :method => 'get' do %>
+  <ul>
+    <%= render :partial => 'plans', :collection => @plans, :as => :plan %>
+  </ul>
+
+ <%= submit_tag "Continue" %>
+ <%= submit_tag "I just want to try it out", :name => "try" %>
+
+<% end %>
+
+<br />
+

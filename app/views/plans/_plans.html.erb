@@ -1,0 +1,6 @@
+<li>
+  <%= plan.level %><br />
+  <%= plan.description %><br />
+  <%= label_tag plan.level, "Select #{plan.level}" %>
+  <%= radio_button_tag :plan_id, plan.id %>
+</li>

@@ -32,5 +32,6 @@ end
 gem 'jquery-rails'
 gem 'pg'
 gem 'devise'
-
+gem 'stripe'
+gem 'country_select'
 
