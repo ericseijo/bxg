@@ -55,4 +55,12 @@ describe User do
     end
   end
 
+  describe "release association" do
+    it { should respond_to :releases }
+  end
+
+  describe "client association" do
+    it { should respond_to :clients }
+  end
+
 end

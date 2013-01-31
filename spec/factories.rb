@@ -25,4 +25,23 @@ FactoryGirl.define do
     status "Trial"
   end
 
+  factory :release do
+    user_id "1"
+    client_id "1"
+    name "Release 1"
+    status "Active"
+    headline "Here's the new release"
+    sub_headline "Sub headline"
+    body "Body text"
+    link "http://www.example.com"
+    publish_date Time.now
+  end
+
+  factory :client do
+    user_id "1"
+    name "Client 1"
+    ticker_symbol "CLI1"
+    website "http://www.example.com"
+  end
+
 end

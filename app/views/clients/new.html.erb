@@ -1,0 +1,28 @@
+<h1>Add a new client</h1>
+
+<%= form_for [@release, @client] do |f| %>
+
+  <p>
+    <%= f.label "What is your client's name?" %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label "Upload their logo" %>
+    <%#= f.text_field :name %>
+  </p>
+
+
+  <p>
+    <%= f.label "Ticker symbol?" %>
+    <%= f.text_field :ticker_symbol %>
+  </p>
+
+  <p>
+    <%= f.label "Website address" %>
+    <%= f.text_field :website %>
+  </p>
+
+  <p><%= f.submit "Add client" %></p>
+
+<% end %>

@@ -1,8 +1,18 @@
 Bxg::Application.routes.draw do
 
+  get "releases_controller/new"
+  get "releases_controller/create"
   match '/dashboard', to: 'dashboard#index'
+  match '/releases/:id/upload', to: 'releases#upload', as: :releases_upload
 
   resources :subscriptions
+  resources :releases do
+    resources :clients
+  end
+
+  resources :clients do
+    resources :releases
+  end
 
 
   devise_for :users

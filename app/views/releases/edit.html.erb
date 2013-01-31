@@ -1,0 +1,42 @@
+<h1>Write your release</h1>
+
+<div>
+  <%= current_user.full_name %> <br />
+  <%= current_user.email %>
+</div>
+
+
+<%= form_for [@client, @release] do |f| %>
+
+  <div>
+    <p>
+      <%= f.label "Headline" %>
+      <%= f.text_field :headline %>
+    </p>
+
+    <p>
+      <%= f.label "Subhead" %>
+      <%= f.text_field :sub_headline %>
+    </p>
+
+    <p>
+      <%= f.label "Body" %>
+      <%= f.text_field :body %>
+    </p>
+
+    <p>
+      <%= f.label "Publish date" %>
+      <%= f.date_select :publish_date %>
+    </p>
+
+  </div>
+
+  <div>
+    <%= f.label "Relevant-URL.com" %>
+    <%= f.text_field :link %>
+  </div>
+
+  <div>
+    <%= f.submit "Save" %>
+  </div>
+<% end %>

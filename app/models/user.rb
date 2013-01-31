@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
 
 
   has_one :subscription
+  has_many :releases
+  has_many :clients
 
   def full_name
   	[first_name, last_name].join(' ')

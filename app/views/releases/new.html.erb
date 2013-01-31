@@ -1,0 +1,7 @@
+<h1>Create a new release</h1>
+<%=  form_for @release do |f| %>
+
+  <%= f.label "Release name" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Create" %>
+<% end %>

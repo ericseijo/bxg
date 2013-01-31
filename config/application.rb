@@ -67,6 +67,7 @@ module Bxg
 
     config.generators do |g|
       g.view_specs false
+      g.controller_specs false
     end
 
   end
