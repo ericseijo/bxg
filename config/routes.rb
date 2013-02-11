@@ -4,6 +4,7 @@ Bxg::Application.routes.draw do
   get "releases_controller/create"
   match '/dashboard', to: 'dashboard#index'
   match '/releases/:id/upload', to: 'releases#upload', as: :releases_upload
+  match '/releases/preview', to: 'releases#preview'
 
   resources :subscriptions
   resources :releases do

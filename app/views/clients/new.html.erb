@@ -1,17 +1,18 @@
 <h1>Add a new client</h1>
 
-<%= form_for [@release, @client] do |f| %>
+<%= form_for [@release, @client], :html => { :multipart => true } do |f| %>
 
   <p>
     <%= f.label "What is your client's name?" %>
     <%= f.text_field :name %>
   </p>
 
-  <p>
-    <%= f.label "Upload their logo" %>
-    <%#= f.text_field :name %>
-  </p>
-
+  <%= fields_for 'logo_file' do |l| %>
+    <p>
+      <%= l.label "Upload their logo" %>
+      <%= l.file_field :logo %>
+    </p>
+  <% end %>
 
   <p>
     <%= f.label "Ticker symbol?" %>

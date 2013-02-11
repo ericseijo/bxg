@@ -1,3 +1,12 @@
+
+<%= stylesheet_link_tag 'markitup/images/style' %>
+<%= stylesheet_link_tag 'markitup/skin/style' %>
+<%= stylesheet_link_tag 'markitup/set/style' %>
+
+<%= javascript_include_tag 'markitup/jquery.markitup' %>
+<%= javascript_include_tag 'markitup/set' %>
+
+
 <h1>Write your release</h1>
 
 <div>
@@ -21,9 +30,10 @@
 
     <p>
       <%= f.label "Body" %>
-      <%= f.text_field :body %>
+      <%= f.text_area :body %>
     </p>
 
+    <%#= #TODO - Add calendar %>
     <p>
       <%= f.label "Publish date" %>
       <%= f.date_select :publish_date %>
@@ -32,7 +42,7 @@
   </div>
 
   <div>
-    <%= f.label "Relevant-URL.com" %>
+    <%= f.label "Relevant URL" %>
     <%= f.text_field :link %>
   </div>
 
@@ -40,3 +50,39 @@
     <%= f.submit "Save" %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+  $(function() {
+    // Add markItUp! to your textarea in one line
+    // $('textarea').markItUp( { Settings }, { OptionalExtraSettings } );
+    //$('#markItUp').markItUp(mySettings);
+    $("textarea").markItUp(mySettings);
+
+
+
+    // You can add content from anywhere in your page
+    // $.markItUp( { Settings } );
+    $('.add').click(function() {
+      $("textarea").markItUp('insert',
+              { 	openWith:'<opening tag>',
+                closeWith:'<\/closing tag>',
+                placeHolder:"New content"
+              }
+      );
+      return false;
+    });
+
+    // And you can add/remove markItUp! whenever you want
+    // $(textarea).markItUpRemove();
+//    $('.toggle').click(function() {
+//      if ($("#markItUp.markItUpEditor").length === 1) {
+//        $("#markItUp").markItUp('remove');
+//        $("span", this).text("get markItUp! back");
+//      } else {
+//        $('#markItUp').markItUp(mySettings);
+//        $("span", this).text("remove markItUp!");
+//      }
+//      return false;
+//    });
+  });
+</script>

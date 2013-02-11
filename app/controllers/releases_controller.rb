@@ -24,7 +24,6 @@ class ReleasesController < ApplicationController
     @release = Release.find(params[:id])
 
     if @release.update_attributes(params[:release])
-      #redirect_to controller: :releases, action: :upload, id: @release
       redirect_to releases_upload_path(@release)
     else
       render action: :edit
@@ -32,7 +31,21 @@ class ReleasesController < ApplicationController
   end
 
   def upload
+    @release = Release.find(params[:id])
+    @assets = @release.assets
+    @asset = @assets.first
 
+    if request.post?
+      @asset = @release.assets.build(:media => params[:upload][:asset])
+
+      if @asset.save
+
+      end
+    end
+  end
+
+  def preview
+    render :layout => false
   end
 
   private

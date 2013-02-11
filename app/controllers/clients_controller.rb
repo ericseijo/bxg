@@ -8,13 +8,15 @@ class ClientsController < ApplicationController
 
   def new
     @client = Client.new
+    @client.build_logo
   end
 
   def create
     @client = current_user.clients.new(params[:client])
+    asset = @client.build_logo
+    asset.media = params[:logo_file][:logo]
 
-
-    if @client.save
+    if @client.save && asset.save
       redirect_to edit_client_release_path(@client, @release)
     else
       render 'new'
