@@ -2,17 +2,18 @@
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "BaxterGate app", '#', id: "logo" %>
-      <nav>
+
+      <div class="nav-collapse">
         <ul class="nav pull-right">
           <li><%= link_to "Home",    '#' %></li>
           <li><%= link_to "Contact",    '#' %></li>
           <% if user_signed_in? %>
-            <li>Logged in as <%= current_user.full_name %> (<%= link_to "Sign out", destroy_user_session_path, method: :delete %>)</li>
+            <li><%= link_to "Logged in as #{current_user.full_name} (Sign out)", destroy_user_session_path, method: :delete %></li>
           <% else %>
             <li><%= link_to "Sign in", new_user_session_path %></li>
           <% end %>
         </ul>
-      </nav>
+      </div><!--/.nav-collapse -->
     </div>
   </div>
 </header>
