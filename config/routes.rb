@@ -9,6 +9,7 @@ Bxg::Application.routes.draw do
   resources :subscriptions
   resources :releases do
     resources :clients
+    resources :distribution_lists
   end
 
   resources :clients do
@@ -38,6 +39,10 @@ Bxg::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
   match 'admin' => 'admin/dashboard#index'
+  match 'view_release/:id' => 'view_release#show', :as => :view_release
+
+  match 'releases/:id/email_release' => 'releases#email_release'
+  match 'releases/:id/schedule_release' => 'releases#schedule_release', :as => :schedule_release
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

@@ -1,4 +1,8 @@
 FactoryGirl.define do
+  sequence :email do |n|
+    "person#{n}@example.com"
+  end
+
   factory :user do
     first_name "Eric"
     last_name "Seijo"
@@ -42,6 +46,30 @@ FactoryGirl.define do
     name "Client 1"
     ticker_symbol "CLI1"
     website "http://www.example.com"
+  end
+
+  factory :distribution_list do
+    release_id "1"
+    name "List"
+    where "US"
+    where_area "Northeast"
+    who "Newspapers"
+    who_sub "New York Times"
+    what "Music"
+    what_sub "Jazz"
+  end
+
+  factory :media_list do
+    company "Huffington Post"
+    address "1234 My St."
+    city "New York"
+    state "NY"
+    zip "10029"
+    phone "212-555-1212"
+    fax "212-555-1213"
+    circulation "66.4"
+    url "http://www.huffingtonpost.com"
+    email
   end
 
 end

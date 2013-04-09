@@ -1,0 +1,6 @@
+<h1>Your list generated</h1>
+
+<h2><%= @media_contacts.try(:size) %> Contacts with <%= number_with_delimiter(subscriber_count_for(@media_contacts).to_i, :delimiter => ",") %> <%#= subscriber_count_for(@media_contacts) %> Subscribers</h2>
+
+<p><%= link_to 'Preview Release', release_path(@release) %></p>
+<p><%= link_to "Edit", edit_release_distribution_list_path(@release, @distribution_list) %></p>

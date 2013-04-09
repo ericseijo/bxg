@@ -36,6 +36,7 @@ describe Release do
   describe "release associations" do
     it { should respond_to(:user) }
     it { should respond_to(:client) }
+    it { should respond_to(:distribution_lists)}
   end
 
 end

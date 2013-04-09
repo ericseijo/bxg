@@ -5,6 +5,7 @@ describe "Create a Release" do
   let(:plan) { FactoryGirl.create(:plan) }
   let(:subscription) { FactoryGirl.create(:subscription, user_id: user.id, plan_id: plan.id, status: 'Active') }
 
+
   before(:each) do
     sign_in user
     visit dashboard_path
@@ -30,6 +31,10 @@ describe "Create a Release" do
 
   end
 
+  it "should not allow a user to view another users releases" do
+
+  end
+
   it "lets a valid user create a new release" do
     click_link "New release"
     fill_in "release_name", with: "My First Release"
@@ -50,6 +55,44 @@ describe "Create a Release" do
     page.should have_content("Upload files")
 
     #TODO NEXT - Add asset uploading
+  end
+
+  describe "preview" do
+    it "should allow a creator to preview" do
+
+    end
+
+    it "should not allow a non creator to preview" do
+
+    end
+
+    it "should allow creator to copy link for external preview" do
+
+    end
+
+    it "should allow creator to email a copy of the preview release" do
+
+    end
+  end
+
+  describe "publish" do
+    let(:client) { FactoryGirl.create(:client) }
+    let(:release) { FactoryGirl.create(:release, client_id: client.id, user_id: user.id) }
+
+    before(:each) do
+      #visit "releases/#{release.id}/schedule_release"
+      visit schedule_release_path(release)
+    end
+
+    it "should schedule a release for publish" do
+      page.should have_content("When do you want to publish?")
+      page.should have_content("Terms of service.")
+      fill_in 'publish_date', with: '05/01/2013 02:30pm'
+      check 'terms_of_service'
+      click_button "Submit for review"
+      #save_and_open_page
+      page.should have_content('Congratulations!')
+    end
   end
 
 

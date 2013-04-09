@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
   end
 
   def is_an_active_member?
-    self.try(:subscription).try(:status) == 'Subscriber' || self.try(:subscription).try(:status) == 'Trial'
+    self.try(:subscription).try(:status) == 'Subscriber' || self.try(:subscription).try(:status) == 'trial'
   end
 
   def is_a_valid_subscriber?

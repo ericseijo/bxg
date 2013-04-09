@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130131155348) do
+ActiveRecord::Schema.define(:version => 20130225175458) do
 
   create_table "assets", :force => true do |t|
     t.integer  "assetable_id"
@@ -35,6 +35,36 @@ ActiveRecord::Schema.define(:version => 20130131155348) do
   end
 
   add_index "clients", ["user_id"], :name => "index_clients_on_user_id"
+
+  create_table "distribution_lists", :force => true do |t|
+    t.integer  "release_id", :null => false
+    t.string   "name",       :null => false
+    t.string   "where"
+    t.string   "where_area"
+    t.string   "who"
+    t.string   "who_sub"
+    t.string   "what"
+    t.string   "what_sub"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "distribution_lists", ["release_id"], :name => "index_distribution_lists_on_release_id"
+
+  create_table "media_lists", :force => true do |t|
+    t.string   "company"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "phone"
+    t.string   "fax"
+    t.decimal  "circulation", :precision => 8, :scale => 2
+    t.string   "url"
+    t.string   "email"
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
+  end
 
   create_table "plans", :force => true do |t|
     t.string   "level"

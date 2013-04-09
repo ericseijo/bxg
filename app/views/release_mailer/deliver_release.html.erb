@@ -1,0 +1,34 @@
+<p>Greetings from BXG,</p>
+
+<p><%= @user_from.full_name %> wanted you to view a preview of the following press release.</p>
+
+<p>Thanks,</p>
+<p>Team BXG</p>
+
+
+<h1>Release</h1>
+<h2><%= @release.headline %></h2>
+<h2><%= @release.sub_headline %></h2>
+
+
+<div id="release_preview_right">
+
+  <div id="release_link">
+    <%= @release.link %>
+  </div>
+
+  <div id="releas_contact_info">
+    <%= @release.user.full_name %><br />
+    555-1212<br />
+    <%= @release.user.email%><br />
+  </div>
+
+  <div id="release_images">
+    Images
+  </div>
+</div>
+
+
+<div id="release_content">
+  <%= @release.body.html_safe %>
+</div>

@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<%= javascript_include_tag 'jquery-ui-timepicker-addon' %>
+
+
+<%= form_tag 'schedule_release' do %>
+  <input type="hidden" id="datetime_to_server" name="formatted_date_time" />
+  <p>&nbsp;</p><br />
+  <h3>When do you want to publish?</h3>
+  <%= text_field_tag 'publish_date' %>
+
+
+  <h3>Terms of service.</h3>
+  <div>Terms of service data</div>
+  <p><%= check_box_tag 'terms_of_service' %> I accept the terms of service.</p>
+  <span id="email_release"><%= submit_tag 'Submit for review' %></span>
+<% end %>
+
+
+<script>
+  $(document).ready(function() {
+
+    $('#publish_date').datetimepicker({
+      timeFormat: "hh:mm tt",
+      altField : '#datetime_to_server',  // selector of the hidden input field you want sent to the server
+      altFormat : 'yy-m-d',
+      altFieldTimeOnly : false,
+      altTimeFormat : 'hh:mm:00'
+    });
+
+  });
+</script>
