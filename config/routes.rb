@@ -38,7 +38,11 @@ Bxg::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
-  match 'admin' => 'admin/dashboard#index'
+  # Admin Section
+  match 'admin' => 'admin/dashboard#index', :as => :admin_dashboard
+  match 'admin/releases/:id/approve_release' => 'admin/releases#approve_release', :as => :admin_approve_release
+  match 'admin/releases/email_user_release_notes' => 'admin/releases#email_user_release_notes'
+
   match 'view_release/:id' => 'view_release#show', :as => :view_release
 
   match 'releases/:id/email_release' => 'releases#email_release'
@@ -78,6 +82,7 @@ Bxg::Application.routes.draw do
       # Directs /admin/products/* to Admin::ProductsController
       # (app/controllers/admin/products_controller.rb)
       resources :plans
+      resources :releases
     end
 
   # You can have the root of your site routed with "root"

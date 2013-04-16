@@ -8,6 +8,7 @@ class DistributionListsController < ApplicationController
   end
 
   def new
+    # @TODO - add option to select from existing distribution list
     @distribution_list = DistributionList.new
   end
 

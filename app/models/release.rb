@@ -10,7 +10,12 @@ class Release < ActiveRecord::Base
   validates :name , presence: true
   validates :status, presence: true
 
-  STATUS = { :active => 'active', :pending => 'pending', :inactive => 'inactive' }
+  STATUS = { :active => 'active',
+             :pending => 'pending',
+             :inactive => 'inactive',
+             :submitted => 'submitted',
+             :approved => 'approved',
+             :query_user => 'query_user'}
 
   def deliver_to_media
     distribution_lists = self.distribution_lists

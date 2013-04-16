@@ -1,0 +1,29 @@
+<h1>Relelases</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Client</th>
+    <th>Release Name</th>
+    <th>Status</th>
+    <th>Publish Date</th>
+    <th>Last Updated</th>
+    <th></th>
+  </tr>
+
+  <% @releases.each do |release| %>
+    <tr>
+      <td><%= release.user.full_name %></td>
+      <td><%= release.client.name %></td>
+      <td><%= release.name %></td>
+      <td><%= release.status %></td>
+      <td><%= release.publish_date.strftime("%m-%d-%y") %></td>
+      <td><%= release.updated_at.strftime("%m-%d-%y") %></td>
+      <td><%= link_to 'Details', admin_release_path(release) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<p><%= link_to 'Back to Dashboard', admin_dashboard_path %></p>

@@ -6,6 +6,10 @@
 <%= javascript_include_tag 'markitup/set' %>
 
 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+<%= javascript_include_tag 'jquery-ui-timepicker-addon' %>
+
 <h1>Write your release</h1>
 
 <div>
@@ -83,5 +87,19 @@
 //      }
 //      return false;
 //    });
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+
+    $('#publish_date').datetimepicker({
+//      timeFormat: "hh:mm tt",
+//      altField : '#datetime_to_server',  // selector of the hidden input field you want sent to the server
+      altFormat : 'yy-m-d'
+//      altFieldTimeOnly : false,
+//      altTimeFormat : 'hh:mm:00'
+    });
+
   });
 </script>

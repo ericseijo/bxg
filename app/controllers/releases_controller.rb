@@ -1,8 +1,8 @@
 class ReleasesController < ApplicationController
   before_filter :authenticate_user!
-  before_filter :find_release, except: [:new, :create ]
+  before_filter :find_release, except: [:new, :create, :preview ]
   before_filter :find_client, only: [:edit, :update]
-  before_filter :check_if_this_users_release_or_redirect, except: [:new, :create]
+  before_filter :check_if_this_users_release_or_redirect, except: [:new, :create, :preview]
 
   def show
 
@@ -51,6 +51,7 @@ class ReleasesController < ApplicationController
   end
 
   def email_release
+    # @TODO - Fix email release form not passing ID...
     ReleaseMailer.release_preview(@release, current_user, params[:email]).deliver if params[:email].present?
     redirect_to(release_path(@release), :notice => "Email sent to #{params[:email]}")
   end
@@ -64,6 +65,7 @@ class ReleasesController < ApplicationController
     if request.post?
       if params[:terms_of_service].present? && params[:publish_date].present?
         @release.publish_date = params[:formatted_date_time]
+        @release.status = Release::STATUS[:submitted]
         if @release.save
           redirect_to(release_path(@release), :notice => "Congratulations! Your release has een submitted for review.")
         else

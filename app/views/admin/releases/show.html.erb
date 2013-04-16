@@ -1,20 +1,19 @@
-<h1>Preview</h1>
-<div><%= link_to "Schedule Release", schedule_release_path(@release) %></div>
+<h1>Release Details</h1>
+<div><%= link_to "Approve Release", admin_approve_release_path(@release) %></div>
+<div id="release_approval">
+  Notes for user: <br />
+  <%= form_tag 'email_user_release_notes' do %>
+    <%= hidden_field_tag 'id', @release.id %>
+    <%= text_area_tag 'notes' %>
+    <span id="email_release"><%= submit_tag 'Message User' %></span>
+  <% end %>
+</div>
 <h2><%= @release.headline %></h2>
 <h2><%= @release.sub_headline %></h2>
 
 
 <div id="release_preview_right">
-  <div id="share">
-    Share Release: <br />
-    <span id="share_link"><%= view_release_url(@release) %></span><br />
-    <%= link_to 'Copy', '#', :id => :share_button %>
-    <%= form_tag 'email_release' do %>
-      <%= hidden_field_tag 'id', @release.id %>
-      <%= text_field_tag 'email' %>
-      <span id="email_release"><%= submit_tag 'Email Link' %></span>
-    <% end %>
-  </div>
+
 
   <div id="release_link">
     <%= @release.link %>

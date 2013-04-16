@@ -14,4 +14,16 @@ class ReleaseMailer < ActionMailer::Base
     mail :to => email_to, :subject => "BXG Press Release"
   end
 
+  def send_notes_to_user(release, notes)
+    @release = release
+    @user_to = release.user
+    @notes = notes
+    mail :to => @user_to.email, :subject => "Questions Regarding Your BXG Press Release"
+  end
+
+  def notify_user_that_release_is_approved(release)
+    @release = release
+    @user_to = release.user
+    mail :to => @user_to.email, :subject => "Your BXG Press Release Has Been Approved"
+  end
 end
