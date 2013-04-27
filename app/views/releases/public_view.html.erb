@@ -1,6 +1,4 @@
-<h1>Preview</h1>
-<div><%= link_to "Schedule Release", schedule_release_path(@release) %></div>
-<h2><%= @release.headline %></h2>
+<h1><%= @release.headline %></h1>
 <h2><%= @release.sub_headline %></h2>
 
 
@@ -33,15 +31,6 @@
 
 
 <div id="release_content">
-  <p><%= link_to 'Edit Release', edit_client_release_path(@release.client, @release) %></p>
-
   <%= @release.body.html_safe %>
 </div>
-<br /><br />
 
-<div id="picked_up_releases">
-  <h4>Picked up by</h4>
-  <% @pickups.each do |pickup| %>
-    <%= pickup.media_list.company %> on <%= pickup.created_at.strftime('%m/%d/%y') %> at <%= pickup.created_at.strftime('%H:%m') %> <br />
-  <% end %>
-</div>

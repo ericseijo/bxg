@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130225175458) do
+ActiveRecord::Schema.define(:version => 20130427174811) do
 
   create_table "assets", :force => true do |t|
     t.integer  "assetable_id"
@@ -77,6 +77,15 @@ ActiveRecord::Schema.define(:version => 20130225175458) do
     t.datetime "created_at",                                                 :null => false
     t.datetime "updated_at",                                                 :null => false
   end
+
+  create_table "release_pickups", :force => true do |t|
+    t.integer  "release_id"
+    t.integer  "media_list_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "release_pickups", ["release_id"], :name => "index_release_pickups_on_release_id"
 
   create_table "releases", :force => true do |t|
     t.integer  "user_id"

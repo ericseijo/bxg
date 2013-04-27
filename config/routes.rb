@@ -47,6 +47,8 @@ Bxg::Application.routes.draw do
 
   match 'releases/:id/email_release' => 'releases#email_release'
   match 'releases/:id/schedule_release' => 'releases#schedule_release', :as => :schedule_release
+  match 'releases/:id/:media_list_id/pickup_release' => 'releases#pickup_release', :as => :release_pickup
+  match 'press_release/:id' => 'releases#public_view', :as => :press_release
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

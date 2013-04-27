@@ -1,11 +1,11 @@
 class ReleasesController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, except: [:pickup_release, :public_view]
   before_filter :find_release, except: [:new, :create, :preview ]
   before_filter :find_client, only: [:edit, :update]
-  before_filter :check_if_this_users_release_or_redirect, except: [:new, :create, :preview]
+  before_filter :check_if_this_users_release_or_redirect, except: [:new, :create, :preview, :pickup_release]
 
   def show
-
+    @pickups = @release.release_pickups(:include => :media_lists)
   end
 
   def new
@@ -77,6 +77,20 @@ class ReleasesController < ApplicationController
 
     end
     
+  end
+
+  def public_view
+    @release = Release.find(params[:id])
+  end
+
+  def pickup_release
+    @media_contact = MediaList.find(params[:media_list_id])
+    if @media_contact
+      @release.picked_up_by(@media_contact)
+      redirect_to(press_release_path(@release))
+    else
+      redirect_to(root_path)
+    end
   end
 
   private

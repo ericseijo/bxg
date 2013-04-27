@@ -8,10 +8,11 @@ class ReleaseMailer < ActionMailer::Base
   end
 
   # email to media contact
-  def deliver_release(release, user_from, email_to)
+  def deliver_release(release, user_from, media_contact)
     @release = release
     @user_from = user_from
-    mail :to => email_to, :subject => "BXG Press Release"
+    @media_contact = media_contact
+    mail :to => @media_contact.email, :subject => "BXG Press Release"
   end
 
   def send_notes_to_user(release, notes)
