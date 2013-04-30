@@ -1,0 +1,8 @@
+<tr>
+  <td><%= release.client.name %></td>
+  <td><%= release.name %></td>
+  <td><%= release.status %></td>
+  <td><%= release.publish_date.strftime("%m-%d-%y") %></td>
+  <td><%= release.updated_at.strftime("%m-%d-%y") %></td>
+  <td><%= link_to 'Details', release_path(release) %></td>
+</tr>

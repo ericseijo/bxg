@@ -1,0 +1,8 @@
+<h1>Message Media Contact</h1>
+
+<%= form_for [@release, @media_contact, @media_contact_message] do |f| %>
+
+  <%= f.label :message %>
+  <%= f.text_area :message, :cols => 50, :rows => 5 %><br />
+  <%= f.submit 'Send Message' %>
+<% end %>

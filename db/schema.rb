@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130427174811) do
+ActiveRecord::Schema.define(:version => 20130430012328) do
 
   create_table "assets", :force => true do |t|
     t.integer  "assetable_id"
@@ -50,6 +50,17 @@ ActiveRecord::Schema.define(:version => 20130427174811) do
   end
 
   add_index "distribution_lists", ["release_id"], :name => "index_distribution_lists_on_release_id"
+
+  create_table "media_contact_messages", :force => true do |t|
+    t.string   "originator"
+    t.integer  "release_id"
+    t.integer  "media_list_id"
+    t.text     "message"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "media_contact_messages", ["release_id"], :name => "index_media_contact_messages_on_release_id"
 
   create_table "media_lists", :force => true do |t|
     t.string   "company"

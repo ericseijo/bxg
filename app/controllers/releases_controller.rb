@@ -6,6 +6,7 @@ class ReleasesController < ApplicationController
 
   def show
     @pickups = @release.release_pickups(:include => :media_lists)
+    @media_contact_messages = MediaContactMessage.find_all_by_release_id(@release)
   end
 
   def new

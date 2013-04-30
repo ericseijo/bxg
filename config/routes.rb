@@ -1,5 +1,10 @@
 Bxg::Application.routes.draw do
 
+
+  get "media_contact_messages/message_sent"
+
+  resources :media_contact_messages
+
   get "releases_controller/new"
   get "releases_controller/create"
   match '/dashboard', to: 'dashboard#index'
@@ -10,6 +15,9 @@ Bxg::Application.routes.draw do
   resources :releases do
     resources :clients
     resources :distribution_lists
+    resources :media_list do
+      resources :media_contact_messages
+    end
   end
 
   resources :clients do
@@ -27,6 +35,8 @@ Bxg::Application.routes.draw do
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
   match '/plans', to: 'plans#index'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -49,6 +59,8 @@ Bxg::Application.routes.draw do
   match 'releases/:id/schedule_release' => 'releases#schedule_release', :as => :schedule_release
   match 'releases/:id/:media_list_id/pickup_release' => 'releases#pickup_release', :as => :release_pickup
   match 'press_release/:id' => 'releases#public_view', :as => :press_release
+
+
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

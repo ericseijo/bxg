@@ -42,6 +42,19 @@
 <div id="picked_up_releases">
   <h4>Picked up by</h4>
   <% @pickups.each do |pickup| %>
-    <%= pickup.media_list.company %> on <%= pickup.created_at.strftime('%m/%d/%y') %> at <%= pickup.created_at.strftime('%H:%m') %> <br />
+    <%= pickup.media_list.company %> on <%= pickup.created_at.strftime('%m/%d/%y') %> at <%= pickup.created_at.strftime('%H:%m') %>
+    <%= link_to "(Send Message)", new_release_media_list_media_contact_message_path(@release, pickup.media_list) %><br />
   <% end %>
 </div>
+<br /><br />
+<div id="media_contact_messages">
+  <h4>Messages</h4><br />
+  <% @media_contact_messages.each do |media_contact_message| %>
+    From: <%= detect_who_sent(media_contact_message) %> on <%= media_contact_message.created_at.strftime('%m/%d/%y') %> at <%= media_contact_message.created_at.strftime('%H:%m') %><br />
+    To: <%= detect_recipient_for(media_contact_message) %><br />
+    <%= media_contact_message.message %>
+    <br /><br />
+  <% end %>
+</div>
+
+

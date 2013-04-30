@@ -7,6 +7,7 @@ class Release < ActiveRecord::Base
   has_many :distribution_lists, :dependent => :destroy
   has_many :release_pickups, :dependent => :destroy
   has_many :media_lists, :through => :release_pickups
+  has_many :media_contact_messages
 
   validates :user_id, presence: true
   validates :name , presence: true
