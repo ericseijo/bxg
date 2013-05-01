@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/release.rb" afterPath="$PROJECT_DIR$/app/models/release.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/releases_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/releases_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/releases/show.html.erb" afterPath="$PROJECT_DIR$/app/views/releases/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bxg.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367281837934" ignored="false" />
-    <file path="/show.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367330796877" ignored="false" />
+    <file path="/Dummy.txt" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367368101686" ignored="false" />
+    <file path="/show.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367368991359" ignored="false" />
     <file path="/view_releases_spec.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1363099451907" ignored="false" />
-    <file path="/routes.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367332051869" ignored="false" />
+    <file path="/routes.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367371629658" ignored="false" />
     <file path="/view_release_controller.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1363096858907" ignored="false" />
     <file path="/releases_controller.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367288267307" ignored="false" />
     <file path="/release_mailer.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367083906056" ignored="false" />
@@ -29,14 +26,14 @@
     <file path="/main_nav.css" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365172812352" ignored="false" />
     <file path="$PROJECT_DIR$/../todl/t6/app/assets/javascripts/css_browser_selector.js" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365110517650" ignored="false" />
     <file path="/Rails bxg: development" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365518011157" ignored="false" />
-    <file path="/Ruby Console" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367332317940" ignored="false" />
+    <file path="/Ruby Console" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367369584036" ignored="false" />
     <file path="/item.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365191220251" ignored="false" />
     <file path="$PROJECT_DIR$/../dva/ticket_tracker/app/models/item.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365191221472" ignored="false" />
     <file path="/deliver_release.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367084049853" ignored="false" />
     <file path="/release.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367285329062" ignored="false" />
     <file path="/user_routing_spec.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365517741383" ignored="false" />
     <file path="/application_controller.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365518150524" ignored="false" />
-    <file path="/user.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365518186252" ignored="false" />
+    <file path="/user.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367369377261" ignored="false" />
     <file path="/custom.css.scss" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365521524955" ignored="false" />
     <file path="/application.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365779807209" ignored="false" />
     <file path="/_header.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1365521772376" ignored="false" />
@@ -61,7 +58,7 @@
     <file path="/edit.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1366120483466" ignored="false" />
     <file path="/_release.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1366120627909" ignored="false" />
     <file path="/new.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367287886820" ignored="false" />
-    <file path="/index.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367283967917" ignored="false" />
+    <file path="/index.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367371559184" ignored="false" />
     <file path="/notify_user_that_release_is_approved.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1366123804018" ignored="false" />
     <file path="/send_notes_to_user.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1366124440486" ignored="false" />
     <file path="$PROJECT_DIR$/../todl/t6/app/views/search/_category_tree_ajax_in_results.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1366648728149" ignored="false" />
@@ -85,6 +82,7 @@
     <file path="/media_contact_messages_helper.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367330483485" ignored="false" />
     <file path="/message_sent.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367332159871" ignored="false" />
     <file path="/notify_user_of_message_reply.html.erb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367331527017" ignored="false" />
+    <file path="/releases_helper.rb" changelist="a78ae2c9-0516-4dec-b9b1-b5ae68d9a73e" time="1367371636983" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,28 +104,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="media_contact_messages_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/media_contact_messages_controller.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="61" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.2906793">
+            <state line="2" column="56" selection-start="144" selection-end="144" vertical-scroll-proportion="-1.28">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_sent.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/media_contact_messages/message_sent.html.erb">
+      <file leaf-file-name="releases_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/releases_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message_contact.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/media_list_mailer/message_contact.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="34" selection-start="62" selection-end="62" vertical-scroll-proportion="-1.28">
+            <state line="13" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.21073961">
               <folding />
             </state>
           </provider>
@@ -136,43 +125,16 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+            <state line="36" column="50" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/releases/show.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="112" selection-start="1275" selection-end="1353" vertical-scroll-proportion="-28.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="media_contact_messages_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/media_contact_messages_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="44" selection-start="41" selection-end="79" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="media_list_mailer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/mailers/media_list_mailer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="67" selection-start="347" selection-end="408" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notify_user_of_message_reply.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/media_list_mailer/notify_user_of_message_reply.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="301" selection-end="301" vertical-scroll-proportion="-6.4">
+            <state line="28" column="28" selection-start="908" selection-end="930" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,22 +163,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/mailers/media_list.rb" />
-        <option value="$PROJECT_DIR$/app/views/media_list/message_contact.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/release.rb" />
         <option value="$PROJECT_DIR$/app/views/media_contact_messages/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/releases_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130430012328_create_media_contact_messages.rb" />
         <option value="$PROJECT_DIR$/app/models/media_contact_message.rb" />
-        <option value="$PROJECT_DIR$/app/views/releases/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/media_contact_messages_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/media_contact_messages/show.html.erb" />
         <option value="$PROJECT_DIR$/app/mailers/media_list_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/media_list_mailer/notify_user_of_message_reply.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/media_contact_messages/message_sent.html.erb" />
         <option value="$PROJECT_DIR$/app/views/media_list_mailer/message_contact.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/media_contact_messages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/releases/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/releases_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
       </list>
     </option>
   </component>
@@ -277,6 +239,117 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSpec" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.RSpecFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSpec" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.RSpecFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="requests" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.FolderSubFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RSpec" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.RSpecFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.FolderSubFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.UnclassifiedViewsFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bxg" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Migrations" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.MigrationsFolder" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -637,117 +710,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSpec" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.RSpecFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSpec" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.RSpecFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.FolderSubFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSpec" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.RSpecFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.FolderSubFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.UnclassifiedViewsFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bxg" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Migrations" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.MigrationsFolder" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -762,10 +724,10 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -773,7 +735,7 @@
       <recent name="$PROJECT_DIR$/app/views/plans" />
     </key>
   </component>
-  <component name="RunManager" selected="IRB console.Rails console: bxg">
+  <component name="RunManager" selected="Rails.Development: bxg">
     <configuration default="false" name="Rails console: bxg" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="bxg" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -1299,21 +1261,21 @@
     <frame x="0" y="22" width="2560" height="1414" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22930904" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22930904" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.67046314" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17143993" sideWeight="0.67046314" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17263326" sideWeight="0.770691" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.4988067" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3552108" sideWeight="0.67046314" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3552108" sideWeight="0.770691" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953683" sideWeight="0.4984089" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.49681783" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1377,41 +1339,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/media_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="57" selection-start="87" selection-end="94" vertical-scroll-proportion="0.012638231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130430012328_create_media_contact_messages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="136" selection-end="146" vertical-scroll-proportion="0.037914693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/releases_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="51" selection-end="125" vertical-scroll-proportion="0.012638231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/media_contact_messages/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="56" selection-end="56" vertical-scroll-proportion="0.025316456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/release.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="8" selection-start="535" selection-end="541" vertical-scroll-proportion="0.18619084">
@@ -1426,13 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/media_contact_messages_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="41" selection-end="79" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/media_contact_messages/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="48" selection-start="73" selection-end="73" vertical-scroll-proportion="0.025785657">
@@ -1440,30 +1360,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/releases/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/media_contact_messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="112" selection-start="1275" selection-end="1353" vertical-scroll-proportion="-28.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/media_list_mailer/notify_user_of_message_reply.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="301" selection-end="301" vertical-scroll-proportion="-6.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/media_list_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="67" selection-start="347" selection-end="408" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+        <state line="23" column="61" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.2906793">
           <folding />
         </state>
       </provider>
@@ -1475,16 +1374,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/media_list_mailer/message_contact.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/media_list_mailer/notify_user_of_message_reply.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="62" selection-end="62" vertical-scroll-proportion="-1.28">
+        <state line="10" column="15" selection-start="301" selection-end="301" vertical-scroll-proportion="0.12658228">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/media_contact_messages_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/mailers/media_list_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="61" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.2906793">
+        <state line="12" column="67" selection-start="347" selection-end="408" vertical-scroll-proportion="0.14895268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/media_contact_messages_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="44" selection-start="41" selection-end="79" vertical-scroll-proportion="0.024825446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/media_list_mailer/message_contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="62" selection-end="62" vertical-scroll-proportion="0.025316456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/releases/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="101" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.65800416">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/static_pages_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="28" selection-start="908" selection-end="930" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/plans_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="50" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="56" selection-start="144" selection-end="144" vertical-scroll-proportion="-1.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/releases_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.21073961">
           <folding />
         </state>
       </provider>

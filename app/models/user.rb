@@ -26,6 +26,10 @@ class User < ActiveRecord::Base
     self.try(:subscription).try(:status) == 'Subscriber'
   end
 
+  def is_a_trial_subscriber?
+    self.try(:subscription).try(:status) == 'trial'
+  end
+
   def subscription_level
     subscription = self.try(:subscription).try(:plan).try(:level)
     status = self.try(:subscription).try(:status)
